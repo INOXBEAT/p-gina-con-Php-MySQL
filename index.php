@@ -13,17 +13,18 @@
     <header class="header">
 
         <div class="menu container">
-            <a href="#" class="logo">logo</a>
+            
             <input type="checkbox" id="menu"/>
             <label for="menu">
                 <img src="images/menu.png" class="menu-icono" alt="menu">
             </label>
             <nav class="navbar">
                 <ul>
+                    <li><a href="#" class="logo">logo</a></li>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                    <li><a href="#Servicios">Servicios</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div> 
@@ -45,7 +46,7 @@
 
     </header>
 
-    <section class="about container">
+    <section id="Nosotros" class="about container">
 
         <div class="about-img">
             <img src="images/about.png" alt="about">
@@ -69,7 +70,7 @@
 
     </section>
     
-    <main class="servicios">
+    <main id="Servicios" class="servicios">
         <h2>Servicios</h2>
         <div class="servicios-content container">
 
@@ -96,7 +97,7 @@
     </main>
 
 
-    <section class="formulario container">
+    <section id="Contacto" class="formulario container">
         <form method="post" autocomplete="off">
             <h2>Agenda consulta</h2>
             <div class="input-group">
@@ -132,9 +133,9 @@
             <div class="link">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                    <li><a href="#Servicios">Servicios</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
                 </ul>
             </div>
 

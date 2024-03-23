@@ -33,13 +33,30 @@ img {
 }
 
 .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 20px 0;
+    background-color: #02B1F4;
+}
+
+.menu .navbar {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    background-color: #FFFFFF;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    z-index: 999;
 }
 
 .menu .navbar ul li {
@@ -63,6 +80,8 @@ img {
     font-weight: 800;
     color: #02B1F4;
     text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #menu {
@@ -396,8 +415,8 @@ textarea {
         margin: 0 0 15px 0;
     }
 
-
-
-
-    
+    #menu:checked ~ .navbar {
+        display: flex;
+  
+}
 }
