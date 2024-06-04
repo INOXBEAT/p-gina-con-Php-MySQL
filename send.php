@@ -16,9 +16,13 @@ if (isset($_POST['send'])) {
         $consulta = "INSERT INTO datos(nombre, telefono, email, mensaje)
         VALUES ('$name', '$phone', '$email', '$message')";
         $resultado = mysqli_query($conex, $consulta);
-
+        if ($resultado) {
+            echo "Datos enviados correctamente";
+        } else {
+            echo "Error al enviar los datos";
+        }
+    } else {
+        echo "Por favor completa todos los campos";
     }
 
 }
-
-?>
