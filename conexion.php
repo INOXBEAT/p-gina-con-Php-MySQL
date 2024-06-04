@@ -1,6 +1,6 @@
 <?php
 
-$conex = mysqli_connect("localhost", "root", "", "formulario");
+$conex = mysqli_connect("localhost", "root", "", "formulario_contacto");
 
 
 if (!$conex) {
